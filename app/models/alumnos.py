@@ -20,9 +20,8 @@ class AlumnoCreate(BaseModel):
 class AlumnoUpdate(BaseModel):
     nombre:str | None = Field(min_length=1, max_length=200)
     email:str | None = Field(min_length=8, max_length=200)
-    matricula:int | None = Field(ge=0)
+    matricula: int | None = Field(gt=0) # gt=greater than
     
-
 class AlumnoOut(BaseModel):
     id: UUID
     nombre:str

@@ -16,8 +16,9 @@ class MaestroUpdate(BaseModel):
 class MaestroOut(BaseModel):
     id: UUID
     nombre:str
-    email:str
     especialidad:str
+    email:str
+    telefono:str
     created_at:datetime
     update_at:datetime
 

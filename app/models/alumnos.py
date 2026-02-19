@@ -28,6 +28,8 @@ class AlumnoOut(BaseModel):
     nombre:str
     email:str
     matricula:int
+    carrera:str
+    telefono:str
     created_at:datetime
     update_at:datetime
 

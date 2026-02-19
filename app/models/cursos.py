@@ -14,7 +14,7 @@ class CursosUpdate(BaseModel):
     maestro_id:UUID | None = Field(ge=0)
     
 class CursosOut(BaseModel):
-    id: UUID
+    id_cur: UUID
     nombre:str
     descripcion:str
     maestro_id:UUID
